@@ -1,0 +1,60 @@
+div {
+  color:black;
+  text-align: center;
+}
+
+#container {
+  margin: 0 auto;
+  width:900px;
+}
+
+#header {
+  background-color: lightgrey;
+  width: 900px;
+  height: 70px;
+  text-align: center;
+  margin-bottom: 10px;
+  float: left;
+  clear: left;
+}
+
+#leftmenu {
+  padding: 0px;
+  background-color: lightgrey;
+  width: 245px;
+  height: 500px;
+  text-align: center;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  float: left;
+}
+
+#maincontent {
+  background-color: lightgrey;
+  width: 390px;
+  height: 500px;
+  text-align: center;
+  margin-bottom: 10px;
+  float: left;
+}
+
+#rightmenu {
+  padding: 0px;
+  background-color: lightgrey;
+  width: 245px;
+  height: 500px;
+  text-align: center;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  float: left;
+}
+
+#footer {
+  padding: 0px;
+  background-color: lightgrey;
+  width: 900px;
+  height: 30px;
+  text-align: center;
+  float: left;
+  clear: left;
+}

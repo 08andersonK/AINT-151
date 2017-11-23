@@ -1,0 +1,39 @@
+#container {
+  margin: 0 auto;
+width: 900px;
+}
+
+#header {
+  background-color: lightgrey;
+  color: black;
+  text-align: center;
+
+  height: 70px;
+  margin-bottom: 10px;
+}
+
+.box {
+  color: black;
+  background-color: lightgrey;
+  float: left;
+  width: 81px;
+  height: 81px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.leftbox {
+  margin-left: 0px;
+}
+
+.clear {
+ clear:both;
+}
+
+#footer {
+  background-color: lightgrey;
+  color: black;
+  text-align: center;
+  width: 900px;
+  height: 30px;
+}
