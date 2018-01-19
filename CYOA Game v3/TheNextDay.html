@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+      <title> The Enterance </title>
+      <script src="CreatePlayer.js"></script>
+      <link rel="stylesheet" href="Style.css" />
+      <script>
+
+      function OnLoad()
+      {
+        document.getElementById("companion1Opinion2").innerHTML = GetCompanion1Opinion2();
+        document.getElementById("companion2Opinion2").innerHTML = GetCompanion2Opinion2();
+      }
+
+      </script>
+
+      <script>
+      function ResolveEntrance()
+      {
+        var c1 = localStorage.getItem("Companion1");
+        var c2 = localStorage.getItem("Companion2");
+        var i1 = localStorage.getItem("Item");
+
+        if (c1 == 4 || c2 == 4)   // Do you have a Mage?
+        {
+          // Spell Path
+          window.location.href = "LightSpell.html";
+        }
+        else if(i1 == 1) // Do you have a Torch?
+        {
+          // Torch Path
+          window.location.href = "LightATorch.html";
+        }
+        else     // if none of the above
+        {
+          // BAD END
+          window.location.href = "IntoTheDark.html";
+        }
+      }
+
+
+      </script>
+  </head>
+
+  <body onload="OnLoad()">
+
+    <div>
+      <h1> The Enterance </h1>
+    </div>
+
+    <div>
+      <p>
+        You awake from your slumber, not the most comfortable bed you have slept in but you know it is necessary. Leaving your very modest 5 man tent, you study your surroundings and the campsites of your companions:
+      </p>
+
+      <p>
+        <span id="companion1Opinion2"></span>
+      </p>
+
+      <p>
+        <span id="companion2Opinion2"></span>
+      </p>
+
+      <p>
+        Satisfied, you bring your attention to your objective…
+      </p>
+
+      <p>
+        Ahead of you sits the small, unearthed door. Reports say that some adventurer’s witnessed it raise up from the ground during an earthquake and decided to venture inside… Only one made it out. They spoke of traps and monsters, that magic residue was very strong inside… But that’s why your help is here!
+      </p>
+
+      <p>
+        You, are here to see what new lore you can uncover, and maybe find an artifact of great value, not fight some monster or get killed in some pitiful trap.
+      </p>
+
+      <p>
+        Quickly, you and your companions gather at the black gate, nad attempt to open it. While the old door looks ancient and heavy, you have almost no trouble forcing it open… almost as if it wants you to enter. Then as the doors open, you are nearly knocked off your feet by the howling gusts of air, bellowing from deep within the abyss ahead.
+      </p>
+
+      <p>
+        Finally… You have arrived. You take one last look around the outside, gathering your thoughts...
+      </p>
+    </div>
+
+    <div>
+      <p class="Choice">
+        <a onclick="ResolveEntrance()" href="#"> Lets Go! </a>
+      </p>
+    </div>
+
+  </body>
+
+</html>

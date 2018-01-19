@@ -1,0 +1,32 @@
+html {
+    background: url("images/Background.png") no-repeat;
+    margin-bottom: auto;
+}
+
+h1 {
+  font-family:cursive;
+  font-size: 50px;
+  text-align: center;
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body {
+  font-family:cursive;
+  font-size: 20px;
+  text-align: left;
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Choice {
+  text-align: center;
+  font-size: 50px;
+}
+
+.Bold {
+  font-weight: bold;
+  font-size: 30px;
+}

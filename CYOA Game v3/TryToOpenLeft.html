@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+      <title> The Magical Door... </title>
+      <script src="CreatePlayer.js"></script>
+      <link rel="stylesheet" href="Style.css" />
+      <script>
+
+      function OnLoad()
+      {
+        document.getElementById("RecordRunes1").innerHTML = GetRecordRunes1();
+      }
+
+      </script>
+  </head>
+
+  <body onload="OnLoad()">
+
+    <div>
+      <h1> The Magical Door... </h1>
+    </div>
+
+    <div>
+      <p>
+        As you attempt to push the door, you feel that the stone is warm… once again separating itself from its surroundings. Try as you might however, it refuses to budge. You decide to try deciphering the runes, but they appear to be a language you have never seen before. Perhaps it belonged to an ancient civilisation?
+      </p>
+
+      <p>
+        <span id="RecordRunes1"></span>
+      </p>
+    </div>
+
+    <div>
+      <p class="Choice">
+        <a href = "TheFirstRoom.html"> Leave it alone </a>
+      </p>
+    </div>
+
+  </body>
+
+</html>

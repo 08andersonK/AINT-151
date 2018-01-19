@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+      <title> The Beaten Path </title>
+      <script src="CreatePlayer.js"></script>
+      <link rel="stylesheet" href="Style.css" />
+      <script src="CreatePlayer.js"></script>
+      <script>
+      function ResolveFight()
+      {
+        var c1 = localStorage.getItem("Companion1");
+        var c2 = localStorage.getItem("Companion2");
+
+        if (c1 == 1 || c2 == 1)   // Do you have a Warrior?
+        {
+          // Warrior Path
+          window.location.href = "StandAndFightWARRIOR.html";
+        }
+        else if(c1 == 3 || c2 == 3) // Do you have a Cleric?
+        {
+          // Cleric Path
+          window.location.href = "StandAndFightCLERIC.html";
+        }
+        else     // if none of the above
+        {
+          // BAD END
+          window.location.href = "StandAndFightBADEND.html";
+        }
+      }
+
+
+      </script>
+  </head>
+
+  <body>
+
+    <div>
+      <h1> The Beaten Path </h1>
+    </div>
+
+    <div>
+      <p>
+        Deciding you want to reach your destination today rather than tomorrow, you make your way down the beaten path. While at first everything seems fine, you quickly began to second guess your decision when you notice all the skeletons of ‘retired’ adventurers littering the pathway. This all culminates with the howling of wolves and the patterning of small, green feet.
+      </p>
+
+      <p>
+        Out of nowhere four little green goblins jump out the bushes with their pet wolves not far behind. Seeing the danger, your companions prepare for battle… But what do you do?
+      </p>
+    </div>
+
+    <div>
+      <p class="Choice">
+        <a onclick="ResolveFight()" href="#"> Stand and Fight </a>
+      </p>
+
+      <p class="Choice">
+        <a href = "Run.html"> Run Away </a>
+      </p>
+    </div>
+
+  </body>
+
+</html>

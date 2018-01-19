@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+      <title> Shopping </title>
+      <script src="CreatePlayer.js"></script>
+
+      <link rel="stylesheet" href="Style.css" />
+  </head>
+
+  <body>
+
+    <div>
+      <h1> Shopping... </h1>
+    </div>
+
+    <div>
+      <p>
+        As you enter the little hut on the edge of town, a shop of fine quality that you have been to before several smaller expeditions prior. The walls are adorned with the heads of several monsters, most likely collected by adventurer’s on adventures through The Path.  You begin to browse the various wares ranging from tools to weapons. At first you ponder spending your gold on a shiny new sword, or perhaps some new armor… But after some careful consideration (and some arguing with your party) you judge your current, modest gear enough for the journey and instead decide to purchase something more useful to the expedition...
+      </p>
+
+      <br>
+
+      <p class="Bold">
+        Please select ONE:
+      </p>
+    </div>
+
+    <div>
+      <p>
+        Buy:
+          <select id="Item">
+          	<option value="1">Torch</option>
+            <option value="2">Rope</option>
+            <option value="3">Parchment</option>
+            <option value="4">Health Potion</option>
+            <option value="5">Shield</option>
+          </select>
+      </p>
+
+      <p>
+        <input type="submit" onclick="Item()" />
+      </p>
+    </div>
+
+    <div>
+      <p class="Choice">
+      <a href = "LeavingCity.html"> Leave </a>
+      </p>
+    </div>
+
+  </body>
+
+</html>

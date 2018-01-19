@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+      <title> The Forest </title>
+      <script src="CreatePlayer.js"></script>
+      <link rel="stylesheet" href="Style.css" />
+      <script>
+
+      function OnLoad()
+      {
+        document.getElementById("companion1Opinion1").innerHTML = GetCompanion1Opinion1();
+        document.getElementById("companion2Opinion1").innerHTML = GetCompanion2Opinion1();
+      }
+
+      </script>
+  </head>
+
+  <body onload="OnLoad()">
+
+    <div>
+      <h1> The Forest </h1>
+    </div>
+
+    <div>
+      <p>
+        Stepping through the gate, you feel the safety of the city fall ever further away. You take a look back as the giant doors slowly close with a loud crash symbolising the locking of the gate. You are alone… or at least alone as far as the more civilized company you usually keep.
+      </p>
+
+      <p>
+        Looking back at your two companions, you pull a map of the area from your satchel and begin making your way into the vast wilderness ahed.
+      </p>
+
+      <p>
+        During your traveling you take note of the dark surroundings and remember the bright, clear skys of the great city you left behind. Looking you you can barely make out any blue through the canopy, and thus are met with greems of various shades. You lower your gaze to the road ahead, but are soon met with what appears to be a fork in the road. Checking your map, you note that the main road will be safer, due to the regular patrols of adventurers, but the side road will be much faster, meaning you will be able to spend more time inside the dungeon before your food supplies run out.
+      </p>
+
+      <p>
+        <span id="companion1Opinion1"></span>
+      </p>
+
+      <p>
+        <span id="companion2Opinion1"></span>
+      </p>
+
+      <p>
+        You look back to the fork, making up your mind, you decide to:
+      </p>
+    </div>
+
+    <div>
+      <p class="Choice">
+        <a href = "BeatenPath.html"> Take the beaten path </a>
+      </p>
+
+      <p class="Choice">
+        <a href = "MainRoad.html"> Take the main road </a>
+      </p>
+    </div>
+
+  </body>
+
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+      <title> Gotta Go Faster! </title>
+      <script src="CreatePlayer.js"></script>
+      <link rel="stylesheet" href="Style.css" />
+      <script>
+        function UseHealthPotion()
+        {
+          localStorage.getItem("Item");
+
+          Item = 0
+
+          localStorage.setItem("Item",Item);
+        }
+
+        function OnLoad()
+        {
+          document.getElementById("UseHealthPotion").innerHTML = UseHealthPotion1();
+          document.getElementById("CallCleric").innerHTML = CallCleric();
+        }
+      </script>
+
+  </head>
+
+  <body onload="OnLoad()">
+
+    <div>
+      <h1> Gotta Go Faster! </h1>
+    </div>
+
+    <div>
+      <p>
+        Deciding the best option to get past this would be to run as fast as you can and hope you outrun the time between the trigger and the shot, you prepare to run ahed.
+      </p>
+
+      <p>
+        Shooting off in a full on sprint, you manage to outrun the darts for some time… too bad you underestimated the length of this trap and found yourself slowing down due to exhaustion…
+      </p>
+
+      <p>
+        Just when you think all is lost, you see light ahead, Perhaps the end of this trap? Either way you feel a second burst of energy come over you and rush for what could be your only salvation... Nearly there… Nearly… NeaOUCH. Just as you make it into the room you feel a sharp pain shoot into your leg. Looks like that last dart got you…
+      </p>
+    </div>
+
+    <div>
+      <p class="Choice">
+        <a href = "RemoveDart.html"> Damn... </a>
+      </p>
+
+      <p class="Choice">
+        <a onclick="UseHealthPotion()" href="HealthPotionDart.html"><span id="UseHealthPotion"></span></a>
+      </p>
+
+      <p class="Choice">
+        <a onclick="CallCleric()" href = "CallClericDart.html"><span id="CallCleric"></span></a>
+      </p>
+    </div>
+
+  </body>
+
+</html>

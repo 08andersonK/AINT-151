@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+      <title> Three artifacts? </title>
+      <script src="CreatePlayer.js"></script>
+      <link rel="stylesheet" href="Style.css" />
+      <script>
+      function ResolveLeftRoom()
+      {
+        var c1 = localStorage.getItem("Companion1");
+        var c2 = localStorage.getItem("Companion2");
+
+        if (c1 == 2 || c2 == 2)   // Do you have a Rouge?
+        {
+          // Rouge Path
+          window.location.href = "HiddenDoor.html";
+        }
+        else     // if none of the above
+        {
+          // BAD END
+          window.location.href = "OpenRight.html";
+        }
+      }
+      </script>
+  </head>
+
+  <body>
+
+    <div>
+      <h1> Three Artifacts? </h1>
+    </div>
+
+    <div>
+      <p>
+        Before long you are met with another small room which, unlike the one you currently reside in, is clean and lit with more runes similar to the ones on the door. Entering the red lit room your eyes are drawn towards the small tablet on the wall at the back. Just like the everything else, the stone tablet has runes as well, only these have remained lifeless. Remembering the door, you raise your hand to the tablet, with similar results. The tablet lights up, but this time something else happens. You find yourself able to read it… or at least something like that. More like someone is reading it to you.
+
+      </p>
+
+      <p>
+        “Welcome, my chosen one, to my final resting place… or rather my current resting place. You have been chosen to become my champion by that ring and you will see my… return to this world. You most likely don't know who, or what, I am; so I wont bother trying to explain… All you need to know is how to fulfill your purpose and it’s rather simple really… Descend into my tomb, collect my three artifacts and return them to my magic circle in the main chamber ahead. Now, there were some who opposed my return… and I am certain they have placed obstacles within the tomb in order to stop you. So I will urge you to take care. Now go, and usher the return of the Phoenix”
+
+      </p>
+
+      <p>
+        Returning to your senses you find yourself overcome with a warmness originating from the ring… But will you listen to this voice?
+
+      </p>
+
+      <p>
+        But enough lollygagging, time to press onwards. You decide it might be time to leave through the other door in the first room...
+      </p>
+    </div>
+
+    <div>
+      <p class="Choice">
+        <a onclick="ResolveLeftRoom()" href="#"> Continue... </a>
+      </p>
+    </div>
+
+  </body>
+
+</html>

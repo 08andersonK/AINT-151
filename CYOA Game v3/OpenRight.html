@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+      <title> It's a Trap! </title>
+      <script src="CreatePlayer.js"></script>
+      <link rel="stylesheet" href="Style.css" />
+      <script>
+      function ResolveTrap1()
+      {
+        var c1 = localStorage.getItem("Companion1");
+        var c2 = localStorage.getItem("Companion2");
+        var i1 = localStorage.getItem("Item");
+
+        if (c1 == 1 || c2 == 1)   // Do you have a Warrior?
+        {
+          // Warrior Path
+          window.location.href = "AlbertDarts.html";
+        }
+        else if (i1 == 5) {
+          // Block Darts With your Shield
+          window.location.href = "BlockDarts.html";
+        }
+        else     // if none of the above
+        {
+          // BAD END
+          window.location.href = "OutrunDarts.html";
+        }
+      }
+      </script>
+  </head>
+
+  <body>
+
+    <div>
+      <h1> It's a Trap! </h1>
+    </div>
+
+    <div>
+      <p>
+        Opening the old door, you come face to face with another dark hallway. Taking a few steps into it you very quickly regret your decision, as the door behind you and your group crashes shut. Stuck in this hallway, you try to pry at the door, but to no avail. Eventually you give up, and turn your attention to the deep dark ahead of you and begin to make your way down this hallway.
+      </p>
+
+      <p>
+        After what feels like hours you start to feel like this corridor will never end and, in frustration, kick a small rock that was nearby. This turned out be be one lucky rock, as the moment it hit the ground you hear a loud ping hit the wall ahead of you. A TRAP! More specifically a dart trap, that once it’s pressure plate gets set off, it shoots a dart out… most likely poisoned too.
+      </p>
+    </div>
+
+    <div>
+      <p class="Choice">
+        <a onclick="ResolveTrap1()" href="#"> Idea! </a>
+      </p>
+    </div>
+
+  </body>
+
+</html>
